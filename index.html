@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Prototype</title>
+  </head>
+  <body>
+    <button
+      class="tablink"
+      onclick="openPage('Resources', this, 'rgb(109, 42, 0)')"
+      id="defaultOpen"
+    >
+      Resources
+    </button>
+
+    <button class="tablink" onclick="openPage('Production', this, 'green')">
+      Production
+    </button>
+
+    <button class="tablink" onclick="openPage('Market', this, 'blue')">
+      Market
+    </button>
+
+    <button class="tablink" onclick="openPage('Crew', this, 'orange')">
+      Crew
+    </button>
+
+    <div id="Resources" class="tabcontent">
+      <div class="resource-container">
+        <h3>Metal</h3>
+        <h4 id="metal-amount">Metal: 0</h4>
+        <button id="metal-btn">Mine</button>
+      </div>
+      <div class="resource-container">
+        <h3>Energy</h3>
+        <h4 id="energy-amount">Energy: 0</h4>
+        <h4 id="powerplants">Power Plants: 0</h4>
+        <h4 id="powerplant-cost">Powerplant Cost: 0</h4>
+        <button id="energy-btn">Build Power Plant</button>
+      </div>
+    </div>
+
+    <div id="Production" class="tabcontent">
+      <div>
+        <h3 id="product-heading">Product: 0</h3>
+        <h4 id="product-cost">Product Cost: 0</h4>
+        <button id="product-btn">Make Product</button>
+      </div>
+    </div>
+
+    <div id="Market" class="tabcontent">
+      <div>
+        <h4>Metal Price:</h4>
+        <h4>Product Price:</h4>
+        <button>Sell Metal</button>
+        <button>Sell Product</button>
+      </div>
+    </div>
+
+    <div id="Crew" class="tabcontent">
+      <h3>Crew</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, deleniti?
+      </p>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
